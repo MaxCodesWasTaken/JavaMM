@@ -41,8 +41,8 @@ def main():
             #Set up Email
             smtp_server = 'smtp.gmail.com'
             smtp_port = 587  # For Gmail, use port 587
-            sender_email = r'mailcodetester887@gmail.com'
-            sender_password = r'uzlgbvesgpcneoue'
+            sender_email = r'REPLACE@gmail.com' # REPLACE 
+            sender_password = r'REPLACE' # REPLACE
             sendmail(smtp_server, smtp_port, sender_email, sender_password, tableofcontents, overview, recipient)
         else:
             print("No memory leak suspect was found")
@@ -90,8 +90,8 @@ def run_mat_leak_suspect_report(mat_path, hprof_file_path):
 main()
 # Example usage
 
-#   cd C:\\MyProj\\Deltek2023\\EclipseMATAutoEmail
+#   cd C:\\MyProj\\EclipseMATAutoEmail
 #   MemoryLeakAlertSystem.bat <pid> <ParseHeapDump.bat location> <project folder> <recipient email address>
 
-#   cd C:\\MyProj\\Deltek2023\\EclipseMATAutoEmail
-#   MemoryLeakAlertSystem.bat 42560 C:\\Users\\mwang\\eclipse\\java-2022-06\\eclipse\\plugins\\mat\\ParseHeapDump.bat C:\\MyProj\\Deltek2023\\EclipseMATAutoEmail mailcodereceiver@gmail.com
+#   cd C:\\MyProj\\EclipseMATAutoEmail
+#   MemoryLeakAlertSystem.bat 42560 C:\\Users\\REPLACE\\eclipse\\java-2022-06\\eclipse\\plugins\\mat\\ParseHeapDump.bat C:\\MyProj\\REPLACE\\EclipseMATAutoEmail REPLACE@gmail.com
